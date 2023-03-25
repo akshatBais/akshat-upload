@@ -29,9 +29,9 @@ public class Code {
 
     public String longDescription;
 
-    public Date fromDate;
+    public String fromDate;
 
-    public Date toDate;
+    public String toDate;
 
     public String sortingPriority;
 

@@ -34,9 +34,8 @@ public class CSVService {
                         csvRecord.get("code"),
                         csvRecord.get("displayValue"),
                         csvRecord.get("longDescription"),
-//                        new Date(csvRecord.get("fromDate")),
-//                        new Date(csvRecord.get("toDate")),
-                        null,null,
+                        csvRecord.get("fromDate"),
+                        csvRecord.get("toDate"),
                         csvRecord.get("sortingPriority")
                 );
 
