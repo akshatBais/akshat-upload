@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 import com.gm.test.repository.CodeRepository;
 
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.util.List;
 
@@ -20,8 +21,8 @@ public class CodeService {
 
     public void upload(MultipartFile file) {
         try {
-            List<Code> tutorials = csvService.csvToCode(file.getInputStream());
-            codeRepository.saveAll(tutorials);
+            List<Code> codes = csvService.csvToCode(file.getInputStream());
+            codeRepository.saveAll(codes);
         } catch (IOException e) {
             throw new RuntimeException("fail to store csv data: " + e.getMessage());
         }
@@ -55,4 +56,19 @@ public class CodeService {
             e.printStackTrace();
         }
     }
+
+    public ByteArrayInputStream downloadCSV() {
+        List<Code> codes = codeRepository.findAll();
+
+        ByteArrayInputStream in = CSVService.dataToCSV(codes);
+        return in;
+    }
+
+    public ByteArrayInputStream downloadCSVByCode(String code) {
+        Code data = codeRepository.findByCode(code);
+        ByteArrayInputStream in = CSVService.dataToCSV(List.of(data));
+        return in;
+    }
+
+
 }

@@ -4,7 +4,11 @@ import com.gm.test.model.Code;
 import com.gm.test.service.CodeService;
 import com.gm.test.service.Response;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.InputStreamResource;
+import org.springframework.core.io.Resource;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -51,5 +55,25 @@ public class CodeController {
     public ResponseEntity<Response> deleteByCode(@PathVariable("code") String code) {
         codeService.deleteByCode(code);
         return ResponseEntity.status(HttpStatus.OK).body(new Response("Deleted record successfully", null));
+    }
+
+    @PostMapping("/download")
+    public ResponseEntity<Resource>downloadCSV() {
+        String filename = "exercise_download.csv";
+        InputStreamResource file = new InputStreamResource(codeService.downloadCSV());
+        String message = "Uploaded the file successfully: ";
+        return ResponseEntity.status(HttpStatus.OK).header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=" + filename)
+                .contentType(MediaType.parseMediaType("application/csv"))
+                .body(file);
+    }
+
+    @PostMapping("/download/{code}")
+    public ResponseEntity<Resource>downloadCSV(@PathVariable("code") String code) {
+        String filename = "exercise_download_"+code+".csv";
+        InputStreamResource file = new InputStreamResource(codeService.downloadCSVByCode(code));
+        String message = "Uploaded the file successfully: ";
+        return ResponseEntity.status(HttpStatus.OK).header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=" + filename)
+                .contentType(MediaType.parseMediaType("application/csv"))
+                .body(file);
     }
 }
