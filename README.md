@@ -1,7 +1,7 @@
 # akshat-upload
 
 ## insitall dependencies 
-mvn clean install
+```mvn clean install```
 
 ## Run 
 Run the application on port ```8080```
