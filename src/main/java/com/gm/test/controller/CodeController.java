@@ -1,16 +1,15 @@
-package com.gerimedica.test.controller;
+package com.gm.test.controller;
 
-import com.gerimedica.test.model.Code;
-import com.gerimedica.test.service.CodeService;
+import com.gm.test.model.Code;
+import com.gm.test.service.CodeService;
+import com.gm.test.service.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import com.gerimedica.test.repository.CodeRepository;
-import com.gerimedica.test.service.Response;
+import com.gm.test.repository.CodeRepository;
 
-import java.lang.annotation.Repeatable;
 import java.util.List;
 
 @RestController("/")

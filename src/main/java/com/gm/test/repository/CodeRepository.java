@@ -1,8 +1,7 @@
-package com.gerimedica.test.repository;
+package com.gm.test.repository;
 
-import com.gerimedica.test.model.Code;
+import com.gm.test.model.Code;
 import org.springframework.data.mongodb.repository.MongoRepository;
-import org.springframework.data.mongodb.repository.Query;
 
 import java.util.List;
 

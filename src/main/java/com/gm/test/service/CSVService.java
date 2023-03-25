@@ -1,6 +1,6 @@
-package com.gerimedica.test.service;
+package com.gm.test.service;
 
-import com.gerimedica.test.model.Code;
+import com.gm.test.model.Code;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;

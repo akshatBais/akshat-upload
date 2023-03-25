@@ -1,4 +1,4 @@
-package com.gerimedica.test.model;
+package com.gm.test.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

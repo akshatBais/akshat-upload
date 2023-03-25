@@ -1,10 +1,10 @@
-package com.gerimedica.test.service;
+package com.gm.test.service;
 
-import com.gerimedica.test.model.Code;
+import com.gm.test.model.Code;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
-import com.gerimedica.test.repository.CodeRepository;
+import com.gm.test.repository.CodeRepository;
 
 import java.io.IOException;
 import java.util.List;
