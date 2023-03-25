@@ -8,4 +8,4 @@ Run the application on port 8080
 
 Application connects to mongodb on port 27017
 
-make sure to run #mongod before running the project :)
+make sure to run ```mongod``` before running the project :)
