@@ -1,0 +1,499 @@
+{
+	"info": {
+		"_postman_id": "a4bb3182-4788-462a-9fb6-9b471db8d842",
+		"name": "test api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3034958"
+	},
+	"item": [
+		{
+			"name": "Get all data ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/codes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"codes"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get all data ",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/codes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"codes"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 25 Mar 2023 11:34:22 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"641edabc741fa97f7b059b5f\",\n        \"source\": \"ZIB\",\n        \"codeListCode\": \"ZIB001\",\n        \"code\": \"271636001\",\n        \"displayValue\": \"Polsslag regelmatig\",\n        \"longDescription\": \"The long description is necessary\",\n        \"fromDate\": \"01-01-2019\",\n        \"toDate\": \"\",\n        \"sortingPriority\": \"1\"\n    },\n    {\n        \"id\": \"641edabc741fa97f7b059b60\",\n        \"source\": \"ZIB\",\n        \"codeListCode\": \"ZIB001\",\n        \"code\": \"61086009\",\n        \"displayValue\": \"Polsslag onregelmatig\",\n        \"longDescription\": \"\",\n        \"fromDate\": \"01-01-2019\",\n        \"toDate\": \"\",\n        \"sortingPriority\": \"2\"\n    },\n    {\n        \"id\": \"641edabc741fa97f7b059b61\",\n        \"source\": \"ZIB\",\n        \"codeListCode\": \"ZIB001\",\n        \"code\": \"Type 1\",\n        \"displayValue\": \"Losse harde keutels, zoals noten\",\n        \"longDescription\": \"\",\n        \"fromDate\": \"01-01-2019\",\n        \"toDate\": \"\",\n        \"sortingPriority\": \"\"\n    },\n    {\n        \"id\": \"641edabc741fa97f7b059b62\",\n        \"source\": \"ZIB\",\n        \"codeListCode\": \"ZIB002\",\n        \"code\": \"Type 2\",\n        \"displayValue\": \"Als een worst, maar klonterig\",\n        \"longDescription\": \"\",\n        \"fromDate\": \"01-01-2019\",\n        \"toDate\": \"\",\n        \"sortingPriority\": \"\"\n    },\n    {\n        \"id\": \"641edabc741fa97f7b059b63\",\n        \"source\": \"ZIB\",\n        \"codeListCode\": \"ZIB002\",\n        \"code\": \"Type 3\",\n        \"displayValue\": \"Als een worst, maar met barstjes aan de buitenkant\",\n        \"longDescription\": \"\",\n        \"fromDate\": \"01-01-2019\",\n        \"toDate\": \"\",\n        \"sortingPriority\": \"\"\n    },\n    {\n        \"id\": \"641edabc741fa97f7b059b64\",\n        \"source\": \"ZIB\",\n        \"codeListCode\": \"ZIB002\",\n        \"code\": \"Type 4\",\n        \"displayValue\": \"Als een worst of slang, glad en zacht\",\n        \"longDescription\": \"\",\n        \"fromDate\": \"01-01-2019\",\n        \"toDate\": \"\",\n        \"sortingPriority\": \"\"\n    },\n    {\n        \"id\": \"641edabc741fa97f7b059b65\",\n        \"source\": \"ZIB\",\n        \"codeListCode\": \"ZIB002\",\n        \"code\": \"Type 5\",\n        \"displayValue\": \"Zachte keutels met duidelijke randen\",\n        \"longDescription\": \"\",\n        \"fromDate\": \"01-01-2019\",\n        \"toDate\": \"\",\n        \"sortingPriority\": \"\"\n    },\n    {\n        \"id\": \"641edabc741fa97f7b059b66\",\n        \"source\": \"ZIB\",\n        \"codeListCode\": \"ZIB002\",\n        \"code\": \"Type 6\",\n        \"displayValue\": \"Zachte stukjes met gehavende randen\",\n        \"longDescription\": \"\",\n        \"fromDate\": \"01-01-2019\",\n        \"toDate\": \"\",\n        \"sortingPriority\": \"\"\n    },\n    {\n        \"id\": \"641edabc741fa97f7b059b67\",\n        \"source\": \"ZIB\",\n        \"codeListCode\": \"ZIB002\",\n        \"code\": \"Type 7\",\n        \"displayValue\": \"Helemaal vloeibaar\",\n        \"longDescription\": \"\",\n        \"fromDate\": \"01-01-2019\",\n        \"toDate\": \"\",\n        \"sortingPriority\": \"\"\n    },\n    {\n        \"id\": \"641edabc741fa97f7b059b68\",\n        \"source\": \"ZIB\",\n        \"codeListCode\": \"ZIB003\",\n        \"code\": \"307047009\",\n        \"displayValue\": \"Rectale temperatuur\",\n        \"longDescription\": \"\",\n        \"fromDate\": \"01-01-2019\",\n        \"toDate\": \"\",\n        \"sortingPriority\": \"1\"\n    },\n    {\n        \"id\": \"641edabc741fa97f7b059b69\",\n        \"source\": \"ZIB\",\n        \"codeListCode\": \"ZIB003\",\n        \"code\": \"415945006\",\n        \"displayValue\": \"Orale temperatuur (onder de tong)\",\n        \"longDescription\": \"\",\n        \"fromDate\": \"01-01-2019\",\n        \"toDate\": \"\",\n        \"sortingPriority\": \"2\"\n    },\n    {\n        \"id\": \"641edabc741fa97f7b059b6a\",\n        \"source\": \"ZIB\",\n        \"codeListCode\": \"ZIB003\",\n        \"code\": \"415882003\",\n        \"displayValue\": \"Axillaire temperatuur (onder de oksel)\",\n        \"longDescription\": \"\",\n        \"fromDate\": \"01-01-2019\",\n        \"toDate\": \"\",\n        \"sortingPriority\": \"\"\n    },\n    {\n        \"id\": \"641edabc741fa97f7b059b6b\",\n        \"source\": \"ZIB\",\n        \"codeListCode\": \"ZIB003\",\n        \"code\": \"415929009\",\n        \"displayValue\": \"Inguinale temperatuur (via de lies)\",\n        \"longDescription\": \"\",\n        \"fromDate\": \"01-01-2019\",\n        \"toDate\": \"\",\n        \"sortingPriority\": \"\"\n    },\n    {\n        \"id\": \"641edabc741fa97f7b059b6c\",\n        \"source\": \"ZIB\",\n        \"codeListCode\": \"ZIB003\",\n        \"code\": \"415974002\",\n        \"displayValue\": \"Tympanische temperatuur\",\n        \"longDescription\": \"\",\n        \"fromDate\": \"01-01-2019\",\n        \"toDate\": \"\",\n        \"sortingPriority\": \"3\"\n    },\n    {\n        \"id\": \"641edabc741fa97f7b059b6d\",\n        \"source\": \"ZIB\",\n        \"codeListCode\": \"ZIB003\",\n        \"code\": \"415922000\",\n        \"displayValue\": \"Temporale temperatuur\",\n        \"longDescription\": \"\",\n        \"fromDate\": \"01-01-2019\",\n        \"toDate\": \"\",\n        \"sortingPriority\": \"\"\n    },\n    {\n        \"id\": \"641edabc741fa97f7b059b6e\",\n        \"source\": \"ZIB\",\n        \"codeListCode\": \"ZIB003\",\n        \"code\": \"364246006\",\n        \"displayValue\": \"Vaginale temperatuur\",\n        \"longDescription\": \"\",\n        \"fromDate\": \"01-01-2019\",\n        \"toDate\": \"\",\n        \"sortingPriority\": \"\"\n    },\n    {\n        \"id\": \"641edabc741fa97f7b059b6f\",\n        \"source\": \"ZIB\",\n        \"codeListCode\": \"ZIB003\",\n        \"code\": \"698832009\",\n        \"displayValue\": \"Blaastemperatuur\",\n        \"longDescription\": \"\",\n        \"fromDate\": \"01-01-2019\",\n        \"toDate\": \"\",\n        \"sortingPriority\": \"\"\n    },\n    {\n        \"id\": \"641edabc741fa97f7b059b70\",\n        \"source\": \"ZIB\",\n        \"codeListCode\": \"ZIB003\",\n        \"code\": \"276885007\",\n        \"displayValue\": \"Kern temperatuur (invasief gemeten)\",\n        \"longDescription\": \"\",\n        \"fromDate\": \"01-01-2019\",\n        \"toDate\": \"\",\n        \"sortingPriority\": \"\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get data by code",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/codes/271636001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"codes",
+						"271636001"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get data by code",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/codes/271636001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"codes",
+								"271636001"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 25 Mar 2023 11:34:58 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"success\",\n    \"data\": {\n        \"id\": \"641edabc741fa97f7b059b5f\",\n        \"source\": \"ZIB\",\n        \"codeListCode\": \"ZIB001\",\n        \"code\": \"271636001\",\n        \"displayValue\": \"Polsslag regelmatig\",\n        \"longDescription\": \"The long description is necessary\",\n        \"fromDate\": \"01-01-2019\",\n        \"toDate\": \"\",\n        \"sortingPriority\": \"1\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Upload all records ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/akshatbais/Downloads/exercise.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"upload"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Upload all records ",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/Users/akshatbais/Downloads/exercise.csv"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/upload",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"upload"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 25 Mar 2023 11:35:38 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Uploaded the file successfully: exercise.csv\",\n    \"data\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete all records",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/codes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"codes"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete all records",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/codes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"codes"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 25 Mar 2023 11:36:02 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Deleted all records successfully\",\n    \"data\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete record by code",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/codes/271636001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"codes",
+						"271636001"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete record by code",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/codes/271636001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"codes",
+								"271636001"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 25 Mar 2023 11:36:53 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Deleted record successfully\",\n    \"data\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "Download all records in form of CSV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/download",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"download"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Download all records in form of CSV",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/download",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"download"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "raw",
+					"header": [
+						{
+							"key": "Content-Disposition",
+							"value": "attachment; filename=exercise_download.csv"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/csv"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 25 Mar 2023 11:37:07 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "ZIB,ZIB001,61086009,Polsslag onregelmatig,,01-01-2019,,2\r\nZIB,ZIB001,Type 1,\"Losse harde keutels, zoals noten\",,01-01-2019,,\r\nZIB,ZIB002,Type 2,\"Als een worst, maar klonterig\",,01-01-2019,,\r\nZIB,ZIB002,Type 3,\"Als een worst, maar met barstjes aan de buitenkant\",,01-01-2019,,\r\nZIB,ZIB002,Type 4,\"Als een worst of slang, glad en zacht\",,01-01-2019,,\r\nZIB,ZIB002,Type 5,Zachte keutels met duidelijke randen,,01-01-2019,,\r\nZIB,ZIB002,Type 6,Zachte stukjes met gehavende randen,,01-01-2019,,\r\nZIB,ZIB002,Type 7,Helemaal vloeibaar,,01-01-2019,,\r\nZIB,ZIB003,307047009,Rectale temperatuur,,01-01-2019,,1\r\nZIB,ZIB003,415945006,Orale temperatuur (onder de tong),,01-01-2019,,2\r\nZIB,ZIB003,415882003,Axillaire temperatuur (onder de oksel),,01-01-2019,,\r\nZIB,ZIB003,415929009,Inguinale temperatuur (via de lies),,01-01-2019,,\r\nZIB,ZIB003,415974002,Tympanische temperatuur,,01-01-2019,,3\r\nZIB,ZIB003,415922000,Temporale temperatuur,,01-01-2019,,\r\nZIB,ZIB003,364246006,Vaginale temperatuur,,01-01-2019,,\r\nZIB,ZIB003,698832009,Blaastemperatuur,,01-01-2019,,\r\nZIB,ZIB003,276885007,Kern temperatuur (invasief gemeten),,01-01-2019,,\r\n"
+				}
+			]
+		},
+		{
+			"name": "Download record in form of csv based on code",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/download/61086009",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"download",
+						"61086009"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Download record in form of csv based on code",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/download/61086009",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"download",
+								"61086009"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "raw",
+					"header": [
+						{
+							"key": "Content-Disposition",
+							"value": "attachment; filename=exercise_download_61086009.csv"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/csv"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 25 Mar 2023 11:37:36 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "ZIB,ZIB001,61086009,Polsslag onregelmatig,,01-01-2019,,2\r\n"
+				}
+			]
+		}
+	]
+}
